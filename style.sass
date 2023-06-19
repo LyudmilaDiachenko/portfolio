@@ -7,6 +7,13 @@ $color-red: #8c1010
     display: flex
     justify-content: center
     align-items: center
+@mixin text-center
+    font-weight: 700
+    font-size: 1.5em
+    text-align: center
+@mixin text
+    font-size: 2em
+    text-align: center
 *
     margin: 0
     padding: 0
@@ -29,11 +36,11 @@ a, img, span
     border-bottom: 2px solid white
     nav
         @include flex
+        align-items: center
         .name-container
             @include flex-center
             .decor-name
-                font-weight: 600
-                font-size: 30px
+                @include text
             .my-name            
                 margin-right: 10px
             .last-name
@@ -43,6 +50,7 @@ a, img, span
             width: 550px
             li
                 .nav-link
+                    font-size: 1.2em
                     font-weight: 600
                     padding: 0 0 5px 0
                     position: relative
@@ -69,7 +77,7 @@ a, img, span
         width: 35%
         padding: 65px 0 0 0
         .offer-title
-            font-size: 20px
+            font-size: 1.5em
         h1
             margin: 50px 0
             line-height: 1.6
@@ -81,6 +89,7 @@ a, img, span
                 @include flex-center
                 background-color: $color-red
                 font-weight: 600
+                font-size: 1em
                 padding: 10px 20px
                 border-radius: 20px
                 width: 46%
@@ -104,7 +113,7 @@ a, img, span
             filter: blur(1.8px)
 .second-screen
     .skill-title
-        font-size: 40px
+        font-size: 2.5em
         text-align: center
         line-height: 1.5
         padding-bottom: 20px
@@ -117,9 +126,7 @@ a, img, span
         @include flex
         li
             .skill-name
-                font-weight: 700
-                font-size: 20px
-                text-align: center
+                @include text-center
                 padding: 10px 0
             .skill-icon
                 margin: 30px auto
@@ -128,33 +135,33 @@ a, img, span
             .skill-icon:hover    
                 transform: scale(1.3)
                 opacity: 0.2
-    .title-language,
-    .title-education
-        font-size: 40px
-        text-align: center
-        line-height: 1.5
-        transform: scale(1)
-        transition: transform 0.7s
-        margin: 20px 0
-    .title-language:hover,
-    .title-education:hover
-        transform: scale(1.3)
-        opacity: 0.2
-    .language-name,
-    .education-name
-        font-weight: 700
-        font-size: 20px
-        text-align: center
-        padding: 10px 0
-        transition: transform 0.7s
-    .language-name:hover,
-    .education-name:hover
-        transform: scale(1.2)
-        color: #06162e
+    .wrrap-lang-educ
+        @include flex
+        padding: 50px 100px
+        .title-language,
+        .title-education
+            font-size: 2.5em
+            text-align: center
+            line-height: 1.5
+            transform: scale(1)
+            transition: transform 0.7s
+            margin: 20px 0
+        .title-language:hover,
+        .title-education:hover
+            transform: scale(1.3)
+            opacity: 0.2
+        .language-name,
+        .education-name
+            @include text-center
+            padding: 10px 0
+            transition: transform 0.7s
+        .language-name:hover,
+        .education-name:hover
+            transform: scale(1.2)
+            color: #06162e
 .third-screen
     .title-experience
-        font-size: 30px
-        text-align: center
+        @include text
         margin-bottom: 30px
     .container-card
         width: 100%
@@ -168,7 +175,7 @@ a, img, span
             margin: 20px
             .title-card
                 @include flex-center
-                font-size: 25px
+                font-size: 1.7em
                 margin-top: 20px
                 .logo-portfolio
                     margin-right: 5px
@@ -193,9 +200,7 @@ a, img, span
             .link-wrrap
                 @include flex-center
                 .experience-link
-                    font-size: 20px
-                    text-align: center
-                    font-weight: 700
+                    @include text-center
                     margin: 20px 20px 40px
                     position: relative
                 .experience-link::before
@@ -220,8 +225,7 @@ a, img, span
         width: 50%
         .contact-title,
         .form-title
-            font-size: 30px
-            text-align: center
+            @include text
             margin-bottom: 30px
         .contact-list
             margin: 15px 0
@@ -231,12 +235,12 @@ a, img, span
                 .icon-contact:hover
                     opacity: 0.2
                 .contact-text
-                    font-size: 18px
+                    font-size: 1.3em
                     font-weight: 500
                     margin: 0 0 0 10px
         form
             label
-                font-size: 18px
+                font-size: 1.3em
                 font-weight: 600
                 margin: 0 0 0 10px
             label::after
@@ -249,14 +253,14 @@ a, img, span
                 border-radius: 15px
                 margin: 15px 0 15px 80px
                 color: black
-                font-size: 16px
+                font-size: 1.3em
                 font-weight: 500
             input:hover, textarea:hover
                 box-shadow: 5px 5px 15px #06162e
             ::-webkit-input-placeholder
                 color: #d32929
                 font-weight: 500
-                font-size: 14px
+                font-size: 0.85em
             textarea
                 resize: none
                 height: 135px
@@ -268,7 +272,7 @@ a, img, span
                 margin: 0 0 15px 250px
                 color: #d32929
                 font-weight: 700
-                font-size: 18px
+                font-size: 1.3em
 .home-link
     @include flex-center
     width: 60px
