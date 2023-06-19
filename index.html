@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/style.min.css">
 </head>
 <body>
-    <section class="first-screen">
+    <section class="first-screen" id="home">
         <nav>
             <div class="name-container">
                 <span class="decor-name my-name">
@@ -24,16 +24,16 @@
                         <a href="" class="nav-link">Home</a>
                     </li>
                     <li>
-                        <a href="" class="nav-link">About</a>
+                        <a href="#skills" class="nav-link">Skills</a>
                     </li>
-                    <li>
+                    <!-- <li>
                         <a href="" class="nav-link">Service</a>
+                    </li> -->
+                    <li>
+                        <a href="#portfolio" class="nav-link">Project Experience</a>
                     </li>
                     <li>
-                        <a href="" class="nav-link">Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="" class="nav-link">Contact</a>
+                        <a href="#contact" class="nav-link">Contact info</a>
                     </li>
                 </ul>
             </div>
@@ -67,7 +67,7 @@
             </div>     
         </div>
     </section>
-    <section class="second-screen">
+    <section class="second-screen" id="skills">
         <h3 class="skill-title">Skills</h3>
         <ul class="skill-list">
             <li>
@@ -87,8 +87,11 @@
                 <img src="./img/icon-bootstrap.png" alt="" class="skill-icon">
             </li>
         </ul>
+        <h3 class="title-language">Languages</h3>
+            <p class="language-name">English - intermediate</p>
+            <p class="language-name">Ukrainian - native</p>
     </section>
-    <section class="third-screen">
+    <section class="third-screen" id="portfolio">
         <h3 class="title-experience">Project Experience</h3>
         <div class="container-card">
             <div class="card">
@@ -98,8 +101,8 @@
                 </h4>
                 <img src="./img/img-portfolio.png" alt="" class="card-image">
                 <div class="link-wrrap">
-                    <a href="https://github.com/LyudmilaDiachenko/rozetka" target="_blank" class="experience-link">GIT Code</a>
-                    <a href="https://lyudmiladiachenko.github.io/rozetka/" target="_blank" class="experience-link">GIT Live</a>
+                    <a href="https://github.com/LyudmilaDiachenko/portfolio" target="_blank" class="experience-link">GIT Code</a>
+                    <a href="https://lyudmiladiachenko.github.io/portfolio/" target="_blank" class="experience-link">GIT Live</a>
                 </div>
             </div>
             <div class="card">
@@ -110,7 +113,7 @@
                     </svg>
                     Rozetka
                 </h4>
-                <img src="./img/img-rozetka.jpg" alt="" class="card-image">
+                <img src="./img/img-rozetka.png" alt="" class="card-image">
                 <div class="link-wrrap">
                     <a href="https://github.com/LyudmilaDiachenko/rozetka" target="_blank" class="experience-link">GIT Code</a>
                     <a href="https://lyudmiladiachenko.github.io/rozetka/" target="_blank" class="experience-link">GIT Live</a>
@@ -130,7 +133,7 @@
                         </svg>
                     Facebook
                 </h4>
-                <img src="./img/img-facebook.jpg" alt="" class="card-image">
+                <img src="./img/img-facebook.png" alt="" class="card-image">
                 <div class="link-wrrap">
                     <a href="https://github.com/LyudmilaDiachenko/facebook" target="_blank" class="experience-link">GIT Code</a>
                     <a href="https://lyudmiladiachenko.github.io/facebook/" target="_blank" class="experience-link">GIT Live</a>
@@ -141,7 +144,7 @@
                     <img src="./img/icon-wikipedia.png" alt="" class="logo-wikipedia">
                     Wikipedia
                 </h4>
-                <img src="./img/img-wikipedia.jpg" alt="" class="card-image">
+                <img src="./img/img-wikipedia.png" alt="" class="card-image">
                 <div class="link-wrrap">
                     <a href="https://github.com/LyudmilaDiachenko/wikipedia" target="_blank" class="experience-link">GIT Code</a>
                     <a href="https://lyudmiladiachenko.github.io/wikipedia/" target="_blank" class="experience-link">GIT Live</a>
@@ -152,7 +155,7 @@
                     <img src="./img/icon-hm.png" alt="" class="logo-wikipedia">
                     H&M
                 </h4>
-                <img src="./img/img-hm.jpg" alt="" class="card-image">
+                <img src="./img/img-hm.png" alt="" class="card-image">
                 <div class="link-wrrap">
                     <a href="https://github.com/LyudmilaDiachenko/hm" target="_blank" class="experience-link">GIT Code</a>
                     <a href="https://lyudmiladiachenko.github.io/hm/" target="_blank" class="experience-link">GIT Live</a>
@@ -160,5 +163,42 @@
             </div>
         </div>
     </section>
+    <section class="fourth-screen" id="contact">
+        <div class="contact-wrrap">
+            <div class="container-contact">
+            <h3 class="contact-title">Contact info</h3>
+                <div class="contact-list">
+                    <a href="https://www.linkedin.com/in/liudmyla-diachenko-1949b6277/" class="contact-link">
+                        <img src="./img/icon-linkedin.png" alt="">
+                        <p>LinkedIn</p>
+                    </a>
+                </div>
+
+                    <img src="./img/icon-mail.png" alt="">
+                    <span>Mail</span>
+                    lyudmila.diachenko@gmail.com
+                    <span>Phone</span>
+                    <img src="./img/icon-viber.png" alt="">
+                    <img src="./img/icon-telegram.png" alt="">
+                    +380632946203
+                    <img src="./img/icon-github.png" alt="">
+                    <a href="https://github.com/LyudmilaDiachenko">
+                        github
+                    </a>
+            </div>
+            <div class="container-form">
+                <h3>Contact form</h3>
+                <form action="">
+                    <label for="">Name:</label>
+                    <input type="text">
+                    <label for="">Email:</label>
+                    <input type="email">
+                    <label for="">Text</label>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </form>
+            </div>
+        </div>
+    </section>
+    <a href="#home" class="home-link"></a>
 </body>
 </html>
