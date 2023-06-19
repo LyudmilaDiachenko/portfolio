@@ -26,9 +26,6 @@
                     <li>
                         <a href="#skills" class="nav-link">Skills</a>
                     </li>
-                    <!-- <li>
-                        <a href="" class="nav-link">Service</a>
-                    </li> -->
                     <li>
                         <a href="#portfolio" class="nav-link">Project Experience</a>
                     </li>
@@ -52,11 +49,11 @@
                     </span>                    
                 </h1>
                 <div class="wrrap-btn">
-                    <a href="" class="btn-link-portfolio flex-center">
+                    <a href="#portfolio" class="btn-link-portfolio flex-center">
                         See portfolio
                         <img src="./img/icon-portfolio.png" alt="" class="icon">
                     </a>
-                    <a href="" class="btn-link-portfolio flex-center">
+                    <a href="#contact" class="btn-link-portfolio flex-center">
                         Contact me
                         <img src="./img/icon-contact.png" alt="" class="icon">
                     </a>
@@ -168,33 +165,40 @@
             <div class="container-contact">
             <h3 class="contact-title">Contact info</h3>
                 <div class="contact-list">
-                    <a href="https://www.linkedin.com/in/liudmyla-diachenko-1949b6277/" class="contact-link">
-                        <img src="./img/icon-linkedin.png" alt="">
-                        <p>LinkedIn</p>
+                    <a href="https://www.linkedin.com/in/liudmyla-diachenko-1949b6277/" target="_blank" class="contact-link">
+                        <img src="./img/icon-linkedin.png" alt="" class="icon-contact">
+                        <p class="contact-text">LinkedIn</p>
                     </a>
                 </div>
-
-                    <img src="./img/icon-mail.png" alt="">
-                    <span>Mail</span>
-                    lyudmila.diachenko@gmail.com
-                    <span>Phone</span>
-                    <img src="./img/icon-viber.png" alt="">
-                    <img src="./img/icon-telegram.png" alt="">
-                    +380632946203
-                    <img src="./img/icon-github.png" alt="">
-                    <a href="https://github.com/LyudmilaDiachenko">
-                        github
+                <div class="contact-list">
+                    <div class="contact-link">
+                        <img src="./img/icon-mail.png" alt="" class="icon-contact">
+                        <p class="contact-text">lyudmila.diachenko@gmail.com</p>
+                    </div>                    
+                </div>
+                <div class="contact-list">
+                    <div class="contact-link">
+                        <img src="./img/icon-viber.png" alt="" class="icon-contact">
+                        <img src="./img/icon-telegram.png" alt="" class="icon-contact">
+                        <p class="contact-text">+380632946203</p>
+                    </div>
+                </div>
+                <div class="contact-list">
+                    <a href="https://github.com/LyudmilaDiachenko" target="_blank" class="contact-link">
+                        <img src="./img/icon-github.png" alt="" class="icon-contact">
+                        <p class="contact-text">github</p>                        
                     </a>
+                </div>
             </div>
             <div class="container-form">
-                <h3>Contact form</h3>
+                <h3 class="form-title">Contact form</h3>
                 <form action="">
-                    <label for="">Name:</label>
-                    <input type="text">
-                    <label for="">Email:</label>
-                    <input type="email">
-                    <label for="">Text</label>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <label for="">Name </label>
+                    <input type="text" placeholder="Enter name" required>
+                    <label for="">Email </label>
+                    <input type="email" placeholder="Enter email" required>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Enter text"></textarea>
+                    <input type="submit" value="Submit">
                 </form>
             </div>
         </div>

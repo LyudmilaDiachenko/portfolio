@@ -205,6 +205,60 @@ a, img, span
                     left: 0
                     right: auto
                     width: 100%
+.contact-wrrap
+    @include flex
+    .container-contact,
+    .container-form
+        width: 50%
+        .contact-title,
+        .form-title
+            font-size: 30px
+            text-align: center
+            margin-bottom: 30px
+        .contact-list
+            margin: 15px 0
+            .contact-link
+                display: flex
+                align-items: center
+                .icon-contact:hover
+                    opacity: 0.2
+         
+                .contact-text
+                    font-size: 18px
+                    font-weight: 500
+                    margin: 0 0 0 10px
+        form
+            label
+                font-size: 18px
+                font-weight: 600
+                margin: 0 0 0 10px
+            label::after
+                content: '*'
+                color: #d32929
+            input, textarea
+                width: calc(100% - 80px)
+                padding: 15px
+                outline: none
+                border-radius: 15px
+                margin: 15px 0 15px 80px
+            input:hover, textarea:hover
+                opacity: 0.2         
+            ::-webkit-input-placeholder
+                color: #d32929
+                font-weight: 500
+                font-size: 14px
+            textarea
+                resize: none
+                height: 135px
+            input[type="submit"]
+                width: 30%
+                padding: 15px
+                outline: none
+                border-radius: 15px
+                margin: 0 0 15px 250px
+                color: #d32929
+                font-weight: 700
+                font-size: 18px
 .home-link
     @include flex-center
     width: 60px
@@ -214,19 +268,8 @@ a, img, span
     background-color: rgba(0,0,0,0)
     position: fixed
     bottom: 50px
-    right: 20px
+    right: 30px
 .home-link::after
     content: "⬆"
     width: 14px
     height: 20px
-.contact-wrrap
-    @include flex
-    .container-contact
-        width: 50%
-        .contact-title
-            font-size: 30px
-            text-align: center
-            margin-bottom: 30px
-        .contact-list
-            .contact-link
-                    
