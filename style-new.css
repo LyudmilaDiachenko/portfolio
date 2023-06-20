@@ -78,7 +78,6 @@ a, img, span{
     text-align: center;
     line-height: 1.5;
 }
-
 section{
     padding: 80px 150px;
     border-bottom: 1px solid #fff;
@@ -99,7 +98,7 @@ section{
     margin-left: 30px;
 }
 .nav-link{
-    font-size: 1.4em;
+    font-size: 1.4vw;
     font-weight: 600;
     padding: 0 0 5px 0;
     position: relative;
@@ -320,7 +319,7 @@ input, textarea{
     outline: none;
     margin: 15px 0;
     color: black;
-    font-size: 1.3em;
+    font-size: 1.3vw;
     font-weight: 500;
     color: #fff;
     border: 2px solid #fff;
@@ -330,7 +329,7 @@ input, textarea{
 ::-webkit-input-placeholder{
     color: #f5b8b8;
     font-weight: 500;
-    font-size: 0.85em;
+    font-size: 0.85vw;
 }
 textarea{
     resize: none;
@@ -343,7 +342,7 @@ input[type="submit"]{
     border-radius: 15px;
     color: #d32929;
     font-weight: 700;
-    font-size: 1.3em;
+    font-size: 1.3vw;
     transform: scale(1);
     transition: transform 0.7s;
 }
@@ -351,34 +350,18 @@ input[type="submit"]:hover{
     transform: scale(1.2);
     color: green;
 }
-    
-    
-    
-        
-    
-
-
-
-                
-                    
-             
-                           
-    
-              
-
-
-            
-        
-                     
-    
-                
-        
-            
-        
-        
-
-
-
-
-
-                    
+.home-link{
+    width: 60px;
+    height: 60px;
+    border: 3px solid #fff;
+    border-radius: 100%;
+    background-color: rgba(0,0,0,0);
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+}    
+.home-link::after{
+    content: "⬆";
+    width: 14px;
+    height: 20px;
+}        
