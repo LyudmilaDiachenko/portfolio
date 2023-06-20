@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio L. Diachenko</title>
     <link rel="icon" href="./img/icon-favicon.png" type="image/png" />
-    <link rel="stylesheet" href="./css/style.min.css">
-    <link rel="stylesheet" href="./css/media.min.css">
+    <!-- <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="stylesheet" href="./css/media.min.css"> -->
+    <link rel="stylesheet" href="style-new.css">
 </head>
 <body>
-    <div class="all-container">
+    <div class="main-container">
         <section class="first-screen" id="home">
-            <nav>
-                <div class="name-container">
+            <nav class="flex-space-bet align-center">
+                <div class="name-container flex-center align-center">
                     <span class="decor-name my-name">
                         Liudmyla 
                     </span>
@@ -21,25 +22,25 @@
                     </span>
                 </div>
                 <div>
-                    <ul class="list-nav">
-                        <li>
+                    <ul class="flex-space-bet">
+                        <li class="nav-list-item">
                             <a href="" class="nav-link">Home</a>
                         </li>
-                        <li>
+                        <li class="nav-list-item">
                             <a href="#skills" class="nav-link">Skills</a>
                         </li>
-                        <li>
+                        <li class="nav-list-item">
                             <a href="#portfolio" class="nav-link">Project Experience</a>
                         </li>
-                        <li>
+                        <li class="nav-list-item">
                             <a href="#contact" class="nav-link">Contact info</a>
                         </li>
                     </ul>
                 </div>
             </nav>
-            <div class="container">
+            <div class="container-offer flex-space-bet align-center">
                 <div class="offer">
-                    <h2 class="offer-title">
+                    <h2 class="offer-h2">
                         Hello there, welcome to my site
                     </h2>
                     <h1>
@@ -50,86 +51,91 @@
                             A Front end developer
                         </span>                    
                     </h1>
-                    <div class="wrrap-btn">
-                        <a href="#portfolio" class="btn-link-portfolio flex-center">
+                    <div>
+                        <p class="offer-text">
+                            If you are looking for front end developer<br> to build you site and grow your business?<br> Let's shake hands with me
+                        </p>
+                    </div>
+                    <div class="flex-start">
+                        <a href="#portfolio" class="btn-link-portfolio  btn-link-text flex-center align-center">
                             See portfolio
-                            <img src="./img/icon-portfolio.png" alt="" class="icon">
+                            <img src="./img/icon-portfolio.png" alt="" class="icon-btn-link">
                         </a>
-                        <a href="#contact" class="btn-link-portfolio flex-center">
+                        <a href="#contact" class="btn-link-portfolio btn-link-text flex-center align-center">
                             Contact me
-                            <img src="./img/icon-contact.png" alt="" class="icon">
+                            <img src="./img/icon-contact.png" alt="" class="icon-btn-link">
                         </a>
                     </div>
                 </div>
-                <div class="photo">
+                <div class="photo flex-end">
                     <img src="./img/picture.png" alt="" class="img-photo">
                 </div>     
             </div>
         </section>
         <section class="second-screen" id="skills">
-            <h3 class="skill-title">Skills</h3>
-            <ul class="skill-list">
+            <h2 class="skill-title title-h2">Skills</h2>
+            <ul class="flex-space-bet">
                 <li>
-                    <p class="skill-name">HTML</p>
+                    <h3 class="skill-name title-h3">HTML</h3>
                     <img src="./img/icon-html.png" alt="" class="skill-icon">
                 </li>
                 <li>
-                    <p class="skill-name">CSS</p>
+                    <h3 class="skill-name title-h3">CSS</h3>
                     <img src="./img/icon-css.png" alt="" class="skill-icon">
                 </li>
                 <li>
-                    <p class="skill-name">SASS</p>
+                    <h3 class="skill-name title-h3">SASS</h3>
                     <img src="./img/icon-sass.png" alt="" class="skill-icon">
                 </li>
                 <li>
-                    <p class="skill-name">Bootstrap</p>
+                    <h3 class="skill-name title-h3">Bootstrap</h3>
                     <img src="./img/icon-bootstrap.png" alt="" class="skill-icon">
                 </li>
             </ul>
-            <div class="wrrap-lang-educ">
+            <div class="wrrap-lang-educ flex-space-bet">
                 <div class="container-language">
-                    <h3 class="title-language">Languages</h3>
-                    <p class="language-name">English - intermediate</p>
-                    <p class="language-name">Ukrainian - native</p>
+                    <h3 class="title-language title-h3">Languages</h3>
+                    <p class="language-name text">English - intermediate</p>
+                    <p class="language-name text">Ukrainian - native</p>
                 </div>
                 <div class="container-education">
-                    <h3 class="title-education">Education</h3>
-                    <p class="education-name">Htmlacademy</p>
-                    <p class="education-name">ITstep</p>
+                    <h3 class="title-education title-h3">Education</h3>
+                    <p class="education-name text">Htmlacademy</p>
+                    <p class="education-name text">ITstep</p>
             </div>
             </div>
             
         </section>
         <section class="third-screen" id="portfolio">
-            <h3 class="title-experience">Project Experience</h3>
-            <div class="container-card">
+            <h2 class="title-experience title-h2">Project Experience</h2>
+            <div class="container-card flex-center">
                 <div class="card">
-                    <h4 class="title-card">
+                    <h3 class="title-card flex-center align-center title-h3">
                         <img src="./img/icon-my-portfolio.png" alt="" class="logo-portfolio">
                         Portfolio
-                    </h4>
+                    </h3>
                     <img src="./img/img-portfolio.png" alt="" class="card-image">
-                    <div class="link-wrrap">
-                        <a href="https://github.com/LyudmilaDiachenko/portfolio" target="_blank" class="experience-link">GIT Code</a>
-                        <a href="https://lyudmiladiachenko.github.io/portfolio/" target="_blank" class="experience-link">GIT Live</a>
+                    <div class="link-wrrap flex-center align-center">
+                        <a href="https://github.com/LyudmilaDiachenko/portfolio" target="_blank" class="experience-link link-text marg">GIT Code</a>
+                        <a href="https://lyudmiladiachenko.github.io/portfolio/" target="_blank" class="experience-link link-text">GIT Live</a>
                     </div>
                 </div>
                 <div class="card">
-                    <h4 class="title-card">
+                    <h3 class="title-card flex-center align-center title-h3">
                         <svg class="logo-rozetka">
                             <path d="M39.9998 20.0882C39.9558 31.1355 30.947 40.0439 19.9119 39.9998C8.87674 39.9557 -0.04389 30.9591 0.000162457 19.9118C0.044215 8.86448 9.05295 -0.043938 20.0881 0.000163037C31.1453 0.0442641 40.0439 9.04088 39.9998 20.0882Z" fill="#221F1F"></path>
                             <path d="M27.203 29.9007C25.0885 33.6934 22.4674 36.8025 19.5379 36.7364C17.7097 36.6922 15.9696 36.0087 14.3837 34.9282C14.8904 34.0021 18.0842 29.3715 27.203 29.9007ZM39.4717 20.0882C39.4276 30.8268 30.6611 39.5147 19.9123 39.4486C9.16353 39.4045 0.529236 30.6504 0.529236 19.9118C0.529236 12.9438 4.00938 7.93834 7.31332 5.24818C11.3662 1.96265 14.1194 4.47641 15.0886 6.39481C14.9785 5.57894 14.6481 3.24158 13.745 1.56574C15.7274 0.882172 17.8639 0.507313 20.0885 0.529363C30.8374 0.595515 39.5157 9.32753 39.4717 20.0882ZM18.9652 8.88652C21.7846 6.96812 26.6524 5.90969 29.2294 9.92289C27.6656 0.749869 20.9035 6.01995 18.9652 8.88652ZM15.0445 17.5524C15.6392 16.8909 16.3221 16.2293 17.115 15.634C20.6392 12.9218 24.4938 12.2382 25.7493 14.1345C26.2339 14.8622 26.2559 15.8765 25.8815 16.9791C27.1369 14.9063 27.5334 12.9879 26.7625 11.9295C25.463 10.1654 21.4321 11.3782 17.7538 14.6417C16.6745 15.5458 15.7714 16.5601 15.0445 17.5524ZM8.89921 19.1841C10.6833 19.5149 12.6216 17.2437 13.2164 14.0684C13.8111 10.8931 12.8639 8.07065 11.0798 7.71784C9.29568 7.38708 7.35737 9.65829 6.76267 12.8336C6.16796 15.9868 7.11509 18.8313 8.89921 19.1841ZM33.7008 15.3473C16.6304 26.7916 4.84638 20.9923 4.84638 20.9923C4.67017 24.9614 11.4763 37.1553 19.5819 37.3097C27.7096 37.464 33.7008 15.3473 33.7008 15.3473ZM7.24724 12.8997C7.7979 9.98905 9.47189 7.87219 10.9917 8.1809C12.5115 8.46756 13.3045 11.0695 12.7758 13.9802C12.2252 16.8909 10.5512 19.0077 9.03137 18.699C7.48953 18.4124 6.69659 15.8104 7.24724 12.8997ZM10.4851 15.3694C11.1679 15.5237 11.9168 14.6858 12.1811 13.5171C12.4454 12.3485 12.093 11.268 11.4102 11.1357C10.9477 11.0254 10.4631 11.3782 10.1107 11.9736C10.419 12.1279 10.5732 12.5249 10.419 12.8556C10.2869 13.1643 9.9785 13.3187 9.67013 13.2525C9.53797 14.2889 9.86837 15.215 10.4851 15.3694Z" fill="#05BC52"></path>
                         </svg>
                         Rozetka
-                    </h4>
+                    </h3>
                     <img src="./img/img-rozetka.png" alt="" class="card-image">
-                    <div class="link-wrrap">
-                        <a href="https://github.com/LyudmilaDiachenko/rozetka" target="_blank" class="experience-link">GIT Code</a>
-                        <a href="https://lyudmiladiachenko.github.io/rozetka/" target="_blank" class="experience-link">GIT Live</a>
+                    <div class="link-wrrap flex-center align-center">
+                        <a href="https://github.com/LyudmilaDiachenko/rozetka" target="_blank" class="experience-link link-text marg">GIT Code</a>
+                        <a href="https://lyudmiladiachenko.github.io/rozetka/" target="_blank" class="experience-link link-text">GIT Live</a>
                     </div>
                 </div>
                 <div class="card">
-                    <h4 class="title-card">
+                    <h3 class="title-card flex-center align-center title-h3">
                         <svg  class="logo-facebook" viewBox="0 0 36 36" height="40" width="40" fill="#0b84ee">
                             <defs>
                                 <linearGradient x1="50%" x2="50%" y1="97.0782153%" y2="0%">
@@ -141,76 +147,89 @@
                                 <path class="f-color" d="M25 23l.8-5H21v-3.5c0-1.4.5-2.5 2.7-2.5H26V7.4c-1.3-.2-2.7-.4-4-.4-4.1 0-7 2.5-7 7v4h-4.5v5H15v12.7c1 .2 2 .3 3 .3s2-.1 3-.3V23h4z" fill="#fff"></path>
                             </svg>
                         Facebook
-                    </h4>
+                    </h3>
                     <img src="./img/img-facebook.png" alt="" class="card-image">
-                    <div class="link-wrrap">
-                        <a href="https://github.com/LyudmilaDiachenko/facebook" target="_blank" class="experience-link">GIT Code</a>
-                        <a href="https://lyudmiladiachenko.github.io/facebook/" target="_blank" class="experience-link">GIT Live</a>
+                    <div class="link-wrrap flex-center align-center">
+                        <a href="https://github.com/LyudmilaDiachenko/facebook" target="_blank" class="experience-link link-text marg">GIT Code</a>
+                        <a href="https://lyudmiladiachenko.github.io/facebook/" target="_blank" class="experience-link link-text">GIT Live</a>
                     </div>
                 </div>
                 <div class="card">
-                    <h4 class="title-card">
+                    <h3 class="title-card flex-center align-center title-h3">
                         <img src="./img/icon-wikipedia.png" alt="" class="logo-wikipedia">
                         Wikipedia
-                    </h4>
+                    </h3>
                     <img src="./img/img-wikipedia.png" alt="" class="card-image">
-                    <div class="link-wrrap">
-                        <a href="https://github.com/LyudmilaDiachenko/wikipedia" target="_blank" class="experience-link">GIT Code</a>
-                        <a href="https://lyudmiladiachenko.github.io/wikipedia/" target="_blank" class="experience-link">GIT Live</a>
+                    <div class="link-wrrap flex-center align-center">
+                        <a href="https://github.com/LyudmilaDiachenko/wikipedia" target="_blank" class="experience-link link-text marg">GIT Code</a>
+                        <a href="https://lyudmiladiachenko.github.io/wikipedia/" target="_blank" class="experience-link link-text">GIT Live</a>
                     </div>
                 </div>
                 <div class="card">
-                    <h4 class="title-card">
+                    <h3 class="title-card flex-center align-center title-h3">
                         <img src="./img/icon-hm.png" alt="" class="logo-wikipedia">
                         H&M
-                    </h4>
+                    </h3>
                     <img src="./img/img-hm.png" alt="" class="card-image">
-                    <div class="link-wrrap">
-                        <a href="https://github.com/LyudmilaDiachenko/hm" target="_blank" class="experience-link">GIT Code</a>
-                        <a href="https://lyudmiladiachenko.github.io/hm/" target="_blank" class="experience-link">GIT Live</a>
+                    <div class="link-wrrap flex-center align-center">
+                        <a href="https://github.com/LyudmilaDiachenko/hm" target="_blank" class="experience-link link-text marg">GIT Code</a>
+                        <a href="https://lyudmiladiachenko.github.io/hm/" target="_blank" class="experience-link link-text">GIT Live</a>
                     </div>
                 </div>
             </div>
         </section>
         <section class="fourth-screen" id="contact">
-            <div class="contact-wrrap">
+            <div class="flex-space-bet">
                 <div class="container-contact">
-                <h3 class="contact-title">Contact info</h3>
+                <h2 class="contact-title title-h2">Contact info</h2>
                     <div class="contact-list">
                         <a href="https://www.linkedin.com/in/liudmyla-diachenko-1949b6277/" target="_blank" class="contact-link">
                             <img src="./img/icon-linkedin.png" alt="" class="icon-contact">
-                            <p class="contact-text">LinkedIn</p>
+                            <p class="contact-text text-contact">LinkedIn</p>
                         </a>
                     </div>
                     <div class="contact-list">
                         <div class="contact-link">
                             <img src="./img/icon-mail.png" alt="" class="icon-contact">
-                            <p class="contact-text">lyudmila.diachenko@gmail.com</p>
+                            <p class="contact-text text-contact">lyudmila.diachenko@gmail.com</p>
                         </div>                    
                     </div>
                     <div class="contact-list">
                         <div class="contact-link">
                             <img src="./img/icon-viber.png" alt="" class="icon-contact">
                             <img src="./img/icon-telegram.png" alt="" class="icon-contact">
-                            <p class="contact-text">+380632946203</p>
+                            <p class="contact-text text-contact">+380632946203</p>
                         </div>
                     </div>
                     <div class="contact-list">
                         <a href="https://github.com/LyudmilaDiachenko" target="_blank" class="contact-link">
                             <img src="./img/icon-github.png" alt="" class="icon-contact">
-                            <p class="contact-text">github</p>                        
+                            <p class="contact-text text-contact">github</p>                        
                         </a>
                     </div>
                 </div>
                 <div class="container-form">
-                    <h3 class="form-title">Contact form</h3>
+                    <h2 class="form-title title-h2">Contact form</h2>
                     <form action="">
-                        <label for="">Name </label>
+                        <label for="">
+                            <img src="./img/icon-human.png" alt="" lable-img>
+                            Your Name
+                        </label>
                         <input type="text" placeholder="Enter name" required>
-                        <label for="">Email </label>
+                        <label for="">
+                            <img src="./img/icon-email-red.png" alt="" lable-img>
+                            Your Email
+                        </label>
                         <input type="email" placeholder="Enter email" required>
+                        <label for="">
+                            <img src="./img/icon-write.png" alt="" lable-img>
+                            Your Message
+                        </label>
                         <textarea name="" id="" cols="30" rows="10" placeholder="Enter text"></textarea>
-                        <input type="submit" value="Submit">
+                        <div class="flex-center align-center">
+                            <input type="submit" value="Submit">
+                        </div>
+                        
                     </form>
                 </div>
             </div>

@@ -1,48 +1,7 @@
 @media screen and (max-width:1200px)
     .all-container
         width: 960px
-    .first-screen,
-    .second-screen,
-    .third-screen,
-    .fourth-screen
-        padding: 40px 75px
-        border-bottom: 2px solid white
-        nav
-        @include flex
-        align-items: center
-        .name-container
-            @include flex-center
-            .decor-name
-                font-weight: 600
-                font-size: 18px
-            .my-name            
-                margin-right: 10px
-            .last-name
-                color: $color-red
-        .list-nav
-            @include flex
-            width: 550px
-            li
-                .nav-link
-                    font-weight: 600
-                    padding: 0 0 5px 0
-                    position: relative
-                .nav-link::before
-                    content: ''
-                    position: absolute
-                    bottom: 0
-                    right: 0
-                    width: 0
-                    height: 3px
-                    border-radius: 0 5px
-                    background-color: #fff
-                    transition: width 0.5s cubic-bezier(0.25, 1, 0.5, 1)
-                @media (hover: hover) and (pointer: fine)
-                .nav-link:hover::before
-                    left: 0
-                    right: auto
-                    width: 100%
-    
+        margin: 0 auto
 @media screen and (max-width:992px)
     .all-container
         width: 720px
