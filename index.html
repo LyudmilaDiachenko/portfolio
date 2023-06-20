@@ -11,34 +11,66 @@
     <link rel="stylesheet" href="media-new.css">
 </head>
 <body>
+    <header>
+        <nav class="flex-space-bet align-center">
+            <div class="name-container flex-center align-center">
+                <span class="decor-name my-name">
+                    Liudmyla 
+                </span>
+                <span class="decor-name last-name">
+                    Diachenko
+                </span>
+            </div>
+            <!-- <div>
+                <ul class="flex-space-bet">
+                    <li class="nav-list-item">
+                        <a href="" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a href="#skills" class="nav-link">Skills</a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a href="#portfolio" class="nav-link">Project Experience</a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a href="#contact" class="nav-link">Contact info</a>
+                    </li>
+                </ul>
+            </div> -->
+            <div class="mini-container">
+                <!-- <div class="mini-menu"> -->
+                    <input type="checkbox" id="mini-menu-checkbox" name="mini-menu-checkbox" class="mini-menu-checkbox">
+                        <svg width="100" height="100" viewBox="0 0 100 100">
+                            <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                            <path class="line line2" d="M 20,50 H 80" />
+                            <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                        </svg>
+                        <label for="mini-menu-checkbox" class="lable-mini-menu">
+                            <div class="list-container">
+                                <ul class="mini-list">
+                                    <li class="nav-list-item nav-link-marg">
+                                        <a href="" class="nav-link">Home</a>
+                                    </li>
+                                    <li class="nav-list-item nav-link-marg">
+                                        <a href="#skills" class="nav-link">Skills</a>
+                                    </li>
+                                    <li class="nav-list-item nav-link-marg">
+                                        <a href="#portfolio" class="nav-link">Project Experience</a>
+                                    </li>
+                                    <li class="nav-list-item nav-link-marg">
+                                        <a href="#contact" class="nav-link">Contact info</a>
+                                    </li>
+                                </ul>
+                            </div>
+                    </label>
+                <!-- </div> -->
+            </div>
+            
+
+        </nav>
+    </header>
     <div class="main-container">
-        <section class="first-screen" id="home">
-            <nav class="flex-space-bet align-center">
-                <div class="name-container flex-center align-center">
-                    <span class="decor-name my-name">
-                        Liudmyla 
-                    </span>
-                    <span class="decor-name last-name">
-                        Diachenko
-                    </span>
-                </div>
-                <div>
-                    <ul class="flex-space-bet">
-                        <li class="nav-list-item">
-                            <a href="" class="nav-link">Home</a>
-                        </li>
-                        <li class="nav-list-item">
-                            <a href="#skills" class="nav-link">Skills</a>
-                        </li>
-                        <li class="nav-list-item">
-                            <a href="#portfolio" class="nav-link">Project Experience</a>
-                        </li>
-                        <li class="nav-list-item">
-                            <a href="#contact" class="nav-link">Contact info</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+        <section class="first-screen" id="home">            
             <div class="container-offer flex-space-bet align-center">
                 <div class="offer">
                     <h2 class="offer-h2">
@@ -95,17 +127,16 @@
             </ul>
             <div class="wrrap-lang-educ flex-space-bet">
                 <div class="container-language">
-                    <h3 class="title-language title-h3">Languages</h3>
+                    <h2 class="title-language title-h2">Languages</h2>
                     <p class="language-name text">English - intermediate</p>
                     <p class="language-name text">Ukrainian - native</p>
                 </div>
                 <div class="container-education">
-                    <h3 class="title-education title-h3">Education</h3>
+                    <h2 class="title-education title-h2">Education</h2>
                     <p class="education-name text">Htmlacademy</p>
                     <p class="education-name text">ITstep</p>
+                </div>
             </div>
-            </div>
-            
         </section>
         <section class="third-screen" id="portfolio">
             <h2 class="title-experience title-h2">Project Experience</h2>
@@ -212,25 +243,24 @@
                 <div class="container-form">
                     <h2 class="form-title title-h2">Contact form</h2>
                     <form action="">
-                        <label for="">
-                            <img src="./img/icon-human.png" alt="" lable-img>
+                        <label for="" class="contact-lable">
+                            <img src="./img/icon-human.png" alt="" class="lable-img">
                             Your Name
                         </label>
-                        <input type="text" placeholder="Enter name" required>
-                        <label for="">
-                            <img src="./img/icon-email-red.png" alt="" lable-img>
+                        <input type="text" placeholder="Enter name" required class="contact-input">
+                        <label for="" class="contact-lable">
+                            <img src="./img/icon-email-red.png" alt="" class="lable-img">
                             Your Email
                         </label>
-                        <input type="email" placeholder="Enter email" required>
-                        <label for="">
-                            <img src="./img/icon-write.png" alt="" lable-img>
+                        <input type="email" placeholder="Enter email" required class="contact-input">
+                        <label for="" class="contact-lable">
+                            <img src="./img/icon-write.png" alt="" class="lable-img">
                             Your Message
                         </label>
-                        <textarea name="" id="" cols="30" rows="10" placeholder="Enter text"></textarea>
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Enter text" class="contact-textarea"></textarea>
                         <div class="flex-center align-center">
                             <input type="submit" value="Submit">
                         </div>
-                        
                     </form>
                 </div>
             </div>

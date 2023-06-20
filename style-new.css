@@ -41,7 +41,7 @@ a, img, span{
     align-items: center;
 }
 .offer-h2{
-    font-size: 2vw;
+    font-size: 1.8vw;
     line-height: 1.5;
 }
 .title-h2{
@@ -73,14 +73,16 @@ a, img, span{
 }
 .link-text{
     font-size: 1.4vw;
-/* font-size: (calc(14px + 2 * ((100vw - 420px) / 860))) */
     font-weight: 600;   
     text-align: center;
     line-height: 1.5;
 }
+header{
+    padding: 100px 150px 50px 150px;
+}
 section{
-    padding: 80px 150px;
-    border-bottom: 1px solid #fff;
+    padding: 50px 150px;
+    border-bottom: 2px solid #fff;
 }
 .decor-name{
     font-size: 1.8vw;
@@ -121,8 +123,48 @@ section{
         width: 100%;
     }    
 }
+.list-container{
+    display: none;
+}
+.mini-menu-checkbox:checked~.lable-mini-menu>.list-container{
+    display: block;
+}
+.mini-container{
+    display: flex;
+}
+.nav-link-marg{
+    margin-bottom: 20px;
+}
+.list-container{
+
+}
+.mini-list{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;    
+}
+.mini-menu-checkbox{
+    /* display: none; */
+}
+.lable-mini-menu{
+    display: block;
+}
+.stick-container{
+    margin-left: 30px;
+}
+/* .stick{
+    width: 45px;
+    height: 3px;
+    background-color: #fff;
+}
+.stik-marg{
+    margin-bottom: 7px;
+} */
+.mini-list{
+
+}
 .container-offer{
-    margin: 80px 0;
+    margin: 50px 0;
 }
 .offer{
     width: 50%;
@@ -170,7 +212,7 @@ h1{
     filter: blur(1.8px);
 }
 .skill-title{
-    margin: 40px 0;
+    margin: 25px 0;
     transform: scale(1);
     transition: transform 0.7s;
 }
@@ -193,11 +235,15 @@ h1{
 .wrrap-lang-educ{
     padding: 50px 100px;
 }
+/* .container-language,
+.container-education{
+    margin: 50px 0;
+} */
 .title-language,
 .title-education{
     transform: scale(1);
     transition: transform 0.7s;
-    margin: 20px 0;
+    margin: 30px 0;
 }
 .title-language:hover,
 .title-education:hover{
@@ -304,7 +350,7 @@ h1{
 .contact-text{
     margin: 0 0 0 10px;
 }
-label{
+.contact-lable{
     display: flex;
     align-items: center;
     font-size: 1.1vw;
@@ -313,7 +359,8 @@ label{
 .lable-img{
     margin-right: 10px;
 }
-input, textarea{
+.contact-input, 
+.contact-textarea{
     width: 100%;
     padding: 15px 0 15px 10px;
     outline: none;
@@ -331,7 +378,7 @@ input, textarea{
     font-weight: 500;
     font-size: 0.85vw;
 }
-textarea{
+.contact-textarea{
     resize: none;
     height: 135px;
 }
