@@ -3,13 +3,31 @@
         width: 960px;
         margin: 0 auto;
     }
+    .nav-link {
+        font-size: 1.9vw;
+    }
     section{
         padding: 50px 0;
-    }        
+    }    
 }
 @media screen and (max-width:992px){
     .main-container{
         width: 720px;
+    }
+    header {
+        margin: 80px 125px 50px 130px;
+    }
+    .nav-list-item {
+        margin-left: 20px;
+    }
+    section {
+        padding: 40px 0;
+    }
+    .skill-icon{
+        width: 70px;
+    }
+    .wrrap-lang-educ {
+        padding: 25px 50px;
     }
     .card {
         width: 45%;
@@ -21,9 +39,6 @@
     }
     header{
         margin: 70px 90px 50px 105px;
-    }
-    .card {
-        width: 60%;
     }
     .max-menu{
         display: none;
@@ -69,7 +84,56 @@
     }
     .line-menu-marg{
         margin-bottom: 10px;
-    } 
+    }
+    .icon-btn-link{
+        display: none;
+    }
+    .decor-name {
+        font-size: 2.9vw;
+    }
+    .line-menu {
+        width: 40px;
+        height: 3px;
+        border-radius: 10px;
+        background-color: #fff;
+    }
+    .nav-link {
+        font-size: 2.5vw;
+    }
+    .offer-text {
+        font-size: 1.5vw;
+    }
+    section {
+        padding: 20px 0;
+    }
+    .skill-icon{
+        width: 70px;
+        margin: 20px 0;
+    }    
+    .card {
+        width: 60%;
+    }
+    .logo-portfolio{
+        width: 40px;
+    }
+    .link-text {
+        font-size: 1.8vw;
+    }
+    .icon-contact{
+        width: 35px;
+    }
+    .lable-img {
+        width: 25px;
+    }
+    input[type="submit"] {
+        width: 37%;
+        padding: 10px;
+    }
+    .home-link {
+        width: 45px;
+        height: 45px;
+        border: 2px solid #fff;
+    }
 }
 @media screen and (max-width:576px){
     .main-container{
@@ -79,17 +143,14 @@
     header {
         margin: 50px 50px 50px 50px;
     }
+    .offer-text {
+        font-size: 1.9vw;
+    }
+    .text {
+        font-size: 2.3vw;
+    }
     .line-menu-marg {
         margin-bottom: 5px;
-    }
-    .line-menu {
-        width: 40px;
-        height: 3px;
-        border-radius: 10px;
-        background-color: #fff;
-    }
-    section {
-        padding: 20px 0;
     }
     .container-offer {
         margin: 20px 0;
@@ -97,23 +158,28 @@
     h1{
         margin: 20px 0;
     }
-    .skill-icon{
-        width: 70px;
-        margin: 20px 0;
-    }
-    .wrrap-lang-educ {
-        padding: 25px 50px;
-    }
+    .icon-btn-link{
+        display: none;
+    }  
     .logo-portfolio{
         width: 34px;
-    }
-    .title-language, .title-education {
-        margin: 10px 0;
-    }
+    }    
     .title-card {
         margin: 10px 20px 20px;
-    }
-    .link-text {
+    }  
+    .text-contact {
         font-size: 1.8vw;
+    }
+    .contact-input, .contact-textarea {
+        padding: 10px 0 13px 10px;
+    }    
+    .contact-textarea {
+        height: 100px;
+    }
+    .contact-lable {
+        font-size: 1.9vw;
+    }
+    ::-webkit-input-placeholder{
+        font-size: 1vw;
     }
 }        
