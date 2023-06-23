@@ -78,11 +78,17 @@ a, img, span{
     line-height: 1.5;
 }
 header{
-    padding: 100px 150px 50px 150px;
+    margin: 100px 150px 50px 150px;
+}
+nav{
+    position: relative;
 }
 section{
     padding: 50px 150px;
     border-bottom: 2px solid #fff;
+}
+.name-container{
+    display: flex;
 }
 .decor-name{
     font-size: 1.8vw;
@@ -95,6 +101,9 @@ section{
 }
 .last-name{
     color: var(--color-red);
+}
+.max-menu-list{
+    display: flex;
 }
 .nav-list-item{
     margin-left: 30px;
@@ -123,45 +132,17 @@ section{
         width: 100%;
     }    
 }
-.list-container{
+.mini-menu-list{
     display: none;
 }
-.mini-menu-checkbox:checked~.lable-mini-menu>.list-container{
+.max-menu{
     display: block;
 }
-.mini-container{
-    display: flex;
+.mini-menu{
+    display: none;
 }
-.nav-link-marg{
-    margin-bottom: 20px;
-}
-.list-container{
-
-}
-.mini-list{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;    
-}
-.mini-menu-checkbox{
-    /* display: none; */
-}
-.lable-mini-menu{
-    display: block;
-}
-.stick-container{
-    margin-left: 30px;
-}
-/* .stick{
-    width: 45px;
-    height: 3px;
-    background-color: #fff;
-}
-.stik-marg{
-    margin-bottom: 7px;
-} */
-.mini-list{
-
+.mini-menu-container{
+    display: none;
 }
 .container-offer{
     margin: 50px 0;
@@ -235,10 +216,6 @@ h1{
 .wrrap-lang-educ{
     padding: 50px 100px;
 }
-/* .container-language,
-.container-education{
-    margin: 50px 0;
-} */
 .title-language,
 .title-education{
     transform: scale(1);
