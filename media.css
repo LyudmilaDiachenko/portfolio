@@ -43,38 +43,49 @@
     .max-menu{
         display: none;
     }
-    .mini-menu-container{
+    .nav-min {
+        margin: 25px 0;
         display: block;
     }
-    .mini-menu-list{
-        display: none;
-    }    
-    .mini-menu-checkbox:checked~.lable-mini-menu>.mini-menu-list{
+    .nav-hamburg-menu {
+        color: white;
+        font-size: 1.2em;
+        font-variant: small-caps;
+        cursor: pointer;
         display: block;
+        float: right;
     }
-    .lable-mini-menu{
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: flex-start;
+    .line-menu{
+        width: 40px;
+        height: 3px;
+        border-radius: 10px;
     }
-    .mini-menu{
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: flex-start;
+    .line-menu-marg{
+        margin-bottom: 5px;
     }
-    .mini-menu-checkbox{
-        display: none;
+    .slide {
+        clear:both;
+        width:100%;
+        height:0px;
+        overflow: hidden;
+        text-align: center;
+        transition: height .4s ease;
     }
-    .mini-menu-container{
-        margin-left: 20px;
+    .slide li {
+        padding: 10px 60px 10px 0;
+        text-align: end;
+    } 
+    .slide a{
+        color: #fff;
+        font-weight: 600;
     }
-    .nav-link-marg{
-        margin-bottom: 20px;
-    }
-    .mini-list{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;    
+    #touch{
+        position: absolute; 
+        opacity: 0; 
+        height: 0px;
+    }  
+    #touch:checked + .slide {
+        height: 180px;        
     }
     .line-menu{
         width: 60px;
@@ -137,14 +148,32 @@
 }
 @media screen and (max-width:576px){
     .main-container{
-            width: 100%;
-            padding: 0 50px;
-        }
+        width: 100%;
+        padding: 0 50px;
+    }
     header {
-        margin: 50px 50px 50px 50px;
+        margin: 50px 50px 10px 50px;
+    }
+    .container-offer {
+        flex-wrap: wrap;
+    }
+    .offer {
+        width: 100%;
+        text-align: center;
+    }    
+    .offer-h2 {
+        font-size: 2.7vw;
+    }
+    h1 {
+        font-size: 3vw;
+        line-height: 1.2;
     }
     .offer-text {
-        font-size: 1.9vw;
+        font-size: 2.7vw;
+        margin-bottom: 30px;
+    }
+    .offer-btn{
+        justify-content: center;
     }
     .text {
         font-size: 2.3vw;
@@ -157,29 +186,82 @@
     }
     h1{
         margin: 20px 0;
-    }
+    }    
     .icon-btn-link{
         display: none;
-    }  
+    }
+    .btn-link-text {
+        font-size: 2.5vw;
+    }
+    .photo {
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    .wrrap-lang-educ{
+        justify-content: center;
+    }
+    .container-language,
+    .container-education{
+        width: 50%;
+        padding: 0 25px;
+        justify-content: center;
+    }
     .logo-portfolio{
         width: 34px;
+    }
+    .card {
+        width: 70%;
     }    
     .title-card {
         margin: 10px 20px 20px;
-    }  
+    }
+    .title-h2 {
+        font-size: 3.5vw;
+    }
+    .title-language, .title-education {
+        margin: 20px 0;
+    }
+    .skill-title {
+        margin: 20px 0;
+    }
+    .title-experience {
+        margin-bottom: 0;
+        margin: 20px 0;
+    }
+    .title-h3 {
+        font-size: 2.8vw;
+    }
+    .link-text {
+        font-size: 2.8vw;
+    }
+    .container-contact, .container-form {
+        width: 100%;
+    }
+    .flex-space-bet{
+        flex-wrap: wrap;
+    }
     .text-contact {
-        font-size: 1.8vw;
+        font-size: 2.5vw;
     }
     .contact-input, .contact-textarea {
-        padding: 10px 0 13px 10px;
+        padding: 15px 0 15px 15px;
     }    
     .contact-textarea {
         height: 100px;
     }
     .contact-lable {
-        font-size: 1.9vw;
+        font-size: 2.5vw;
     }
     ::-webkit-input-placeholder{
-        font-size: 1vw;
+        font-size: 2vw;
+    }
+    input[type="submit"] {
+        font-size: 2.5vw;
+        padding: 10px 30px;
+    }
+    .home-link{
+        display: none;
     }
 }        

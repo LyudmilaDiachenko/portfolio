@@ -132,16 +132,10 @@ section{
         width: 100%;
     }    
 }
-.mini-menu-list{
-    display: none;
-}
 .max-menu{
     display: block;
 }
-.mini-menu{
-    display: none;
-}
-.mini-menu-container{
+.nav-min{
     display: none;
 }
 .container-offer{
