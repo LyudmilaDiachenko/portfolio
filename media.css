@@ -264,4 +264,44 @@
     .home-link{
         display: none;
     }
+}
+@media screen and (max-width:320px){
+    .main-container{
+        width: 100%;
+        padding: 0 25px;
+    }
+    header {
+        margin: 25px;
+    }
+    .decor-name {
+        font-size: 3.5vw;
+    }
+    .line-menu {
+        width: 30px;
+    }
+    .nav-min {
+        margin: 0;
+    }
+    .min-link{
+        font-size: 3vw;
+    }
+    .slide li {
+        padding: 10px 35px 5px 0;
+    }
+    #touch:checked + .slide {
+        height: 105px;
+    }
+    section {
+        padding: 10px 0 20px 0;
+    }
+    .skill-icon {
+        width: 55px;
+        margin: 15px 0;
+    }
+    .wrrap-lang-educ {
+        padding: 10px 0px;
+    }
+    .home-link{
+        display: none;
+    }
 }        
